@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+ <script>
+
+     // Declarar multiplas variáveis
+     let a=15,b=4.5,c=2
+
+     alert(a-b)// Subtração
+     alert(a*b)// Mulplicação
+     alert(a/b)// Divisão
+     alert(a+b)// Soma
+     alert(a%c)// Resto da divisão inteira(Módulo)
+     alert(a**c)// Potencia
+
+
+     let d ='3'// Uma string que conté um número dentro
+
+     /* Se uma string contém dentro dela um número válido e essa string é usada,em expressões aritméticas , JS a convertera em número e fará a operação normalmente, na maioria dos casos*/
+
+     alert(a-d)// Subtração de número e string
+     alert(a*d) // Multiplicação de número por string ok
+     alert(a/d)// Dividão de numero por string ok
+     alert(a%d)// Módulo de numero por string ok
+     alert(a**d)// Potencião de numero elevado a string ok
+     alert(a+d)// soma de numero e string (não  faz operação, haverá a concatenação do número e string)
+
+     let msg1='Bom'
+     let msg2='dia'
+     alert(msg1 + msg2)
+
+
+     let e= 'batata'
+     alert(a-e)// Result is not a number(NaN)
+     alert(a*e)//NaN
+     alert(a+e)
+
+
+     //Tipos de dados
+
+    let teste
+    alert(typeof teste)//undefined
+    
+    teste=1000
+    alert(typeof teste)// number
+    
+    teste= 'Fatec Franca'
+    alert(typeof teste)// string
+
+    teste= true
+    alert=(typeof teste)// boolean
+
+
+
+
+
+
+ </script>
+    
+</body>
+</html>
