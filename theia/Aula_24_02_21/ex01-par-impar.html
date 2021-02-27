@@ -28,18 +28,28 @@
             ou ímpar e informe ao usuário usando alert().
         */
         
-        
-        let number=parseInt(prompt('Type a integer number:'))
-    
-
-        
-        if (number%2==0){
+        function evenOdd(){
+             
+             let number=parseInt(prompt('Type a integer number:'))
+            
+        if (isNaN(number)){
+            alert('the number typed isn´t a  integer number')
+        }
+        else if (number%2==0){
             alert('the number typed is even number')
         }else{
-            alert('The number typed is odd number')
+            alert('The number typed is odd  number')
         }
 
+
+        }
+        evenOdd()
+
+   
         
+       
+
+    
 
     </script>
 </head>
