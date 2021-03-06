@@ -24,36 +24,42 @@
             e informe o resultado usando document.write().
         */
 
-
-    let number1=parseFloat(prompt('Digite um número:'))
-    let number2=parseFloat(prompt('Digite outro número:'))
-    let oper=prompt('Digite o operador desejado:')
-    n1=Number(number1.value)
-    n2=Number(number1.value)
     
-
-
-    if(oper == '+'){
-         let res=n1+n2
+       let number1=parseFloat(prompt('digite n1'))
+       let number2=parseFloat(prompt('digite n2'))
+       let oper=(prompt('operador'))
+       let res
     
-    }else if(oper== '-'){
-        let res=n1+n2
+        if(isNaN(number1)||isNaN(number2)){
+            alert('[Erro:Os valores informados não correspondem a número válidos]')
+        }
+       else if(oper=='+'){
+           res=number1+number2
+           document.write(` A soma entre ${number1} e ${number2} é ${res}`)
+           
         
-    }else if(oper== '*' || oper=='x' || oper=='X'){
-        let res=n1*n2
-        
-    }else if(oper== '/' || oper==':' ){
-        let res=n1/2
-        
-    }else{
-        alert('operador não identificado')
-    
-    }
-    alert(res)
-  
+       }else if(oper=='-'){
+        res=number1-number2
+        document.write(` A subtração entre ${number1} e ${number2} é igual ${res.toFixed(2)}`)
 
-    
-    </script>
+       }else if(oper=='*' || oper=='x' || oper=='X'){
+        res=number1*number2
+        document.write(` A multiplicação entre ${number1} e ${number2} é  igual ${res.toFixed(2)}`)
+           
+       }else if(oper=='/' || oper==':'){
+        res=number1/number2
+        document.write(` A divisão entre ${number1} e ${number2} é igual ${res}`)
+           
+        }else{
+            alert(' Operaçõa não identificada')
+        }
+
+
+
+
+
+
+</script>
 </head>
 <body>
     

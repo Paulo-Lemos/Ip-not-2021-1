@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Switch</title>
+</head>
+<body>
+    <script>
+               let number1=parseFloat(prompt('type n1'))
+       let number2=parseFloat(prompt('type n2'))
+       let oper=(prompt('operador'))
+       let res
+    
+        if(isNaN(number1)||isNaN(number2)){
+            alert('[Erro:Os valores informados não correspondem a número válidos]')
+        }
+       else{
+           switch(oper){
+               case'+':
+               document.write(` ${number1+number2}`)
+               break
+               case'-':
+               document.write(`${number1-number2}`)
+               break
+                case'*':
+               document.write(`${number1*number2}`)
+               break
+                case'x':
+               document.write(`${number1*number2}`)
+               break
+                case'X':
+               document.write(`${number1*number2}`)
+               break
+                case'/':
+               document.write(`${number1/number2}`)
+               break
+                case':':
+               document.write(`${number1/number2}`)
+               break
+
+               default:
+                   document.write('[Erro] None  operator was found')
+                   break
+               
+               
+           }
+       }
+    </script>
+
+    
+</body>
+</html>
