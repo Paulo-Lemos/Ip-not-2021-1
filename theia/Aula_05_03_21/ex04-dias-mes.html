@@ -23,6 +23,43 @@
             * FEVEREIRO: 28 ou 29 dias (em anos bissextos)
         */
 
+let number=parseInt(prompt('Digite um número entre 1 a 12 para selecionar um mês'))
+
+if (isNaN(number)|| number<1|| number>12){
+    alert('[ERRO]Digite um número por favor')
+}else{
+    switch(number){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert( 'mes com  31 dias')
+            break
+        
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            alert( ' mês  com 30 dias')
+            break 
+
+                default:
+                alert( ' mes com 28 ou 29 dias')
+
+           
+            
+    }
+
+}
+
+
+
+
+
+    
 
       
 
