@@ -40,11 +40,14 @@
             a letra correspondente ao dígito informado.
 
         */
+       let num
        
         do{ 
-            let num= Number(prompt(" Digite um numero entre 0 e 9"))
-           
-                switch(num){
+            num= parseInt(prompt(" Digite um numero entre 0 e 9"))
+           }
+    while(isNaN(num)|| num<0 || num>9)               
+        
+        switch(num){
                     case 0:
                      alert('A')
                         break
@@ -78,8 +81,8 @@
             default:
 
                 }
-        }
-    while(!isNaN(num) & num<=0 & num<=9)
+
+
 
     </script>
 </head>

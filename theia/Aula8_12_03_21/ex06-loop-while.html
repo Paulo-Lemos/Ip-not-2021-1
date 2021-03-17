@@ -25,7 +25,43 @@
             informe com document.write todos aqueles que têm um pedágio ou um posto
             de atendimento ao usuário da AUTOBURACON S/A.
 
-        */
+        */ 
+
+
+        let ext
+
+        do {
+        ext =  parseInt(prompt('Digite tamanho da rodovia acima de km '))
+
+        }
+        while(isNaN(ext) || ext<=200)
+
+        let km = 1
+
+        while(km<=ext){
+            if(km %31 == 0){
+                document.write(`${km} pedagio <br>` )
+            }
+                
+            if(km%23===0){ 
+                document.write(`${km} posto atendimento <br> `)
+
+            }
+            km++
+
+        }
+
+        
+
+
+        
+           
+            
+
+
+        
+        
+
 
     </script>
 </head>
