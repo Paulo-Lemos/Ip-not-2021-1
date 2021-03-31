@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+<h1>    Document Objet Model</h1>
+<p><em>Document Object Moldel</em> (Modelos de Objetos documentados) é a estrutura da páginahtml tal como vista  pelo JavaScript</p>
+
+<ul>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+</ul>
+
+<ol>
+    <li id="bra">Brasil</li>
+    <li id="arg">Argentina</li>
+    <li id="par"> Paraguai</li>
+    <li id="uru">Uruguai</li>
+    <li id="bol"> Bolívia</li>
+    <li id="chi"> Chile</li>
+</ol>
+
+
+
+
+<script>
+
+    'use strict'
+
+    // Mudando caracteristicas do título via js
+
+    const elementoH1=document.querySelector('h1')
+    elementoH1.textContent='Novo título da pagina'
+    elementoH1.style.color='blue'
+
+
+    // Mudando caracteristicas do título via js
+
+
+    const elementoP=document.querySelector('p')
+   elementoP.style.textAlign='center'
+   elementoP.style.fontWeight='bold'
+
+
+   /*const elementoLi=document.querySelector('li')
+   elementoLi.style.backgroundColor='yellow'
+   elementoLi.style.fontStyle='italic'*/
+
+    const elementosLi=document.querySelectorAll('li')
+    elementosLi [0].style.color='red'
+    elementosLi [1].style.color='yellow'
+    elementosLi [2].style.backgroundColor='red'
+
+
+    elementosLi[6].style.textDecoration='underline'
+    
+
+    const itemArgentina=document.querySelector('#arg')
+    itemArgentina.style.color="rgb(116,172,223)"
+   
+
+</script>
+    
+</body>
+</html>
