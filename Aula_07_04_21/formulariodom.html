@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de documento HTML</title>
+    <style>
+    div,Fieldset{
+        margin-bottom:20px;
+    }
+    div label{
+        display:block;
+
+    
+    }
+    #saudação{
+        background: #0f0;
+        height:20px;
+    
+        
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Formulário de Saudaçao</h1>
+
+
+    <div>
+    <label for="Primeiro-nome">Primeiro nome</label>
+    <input id="primeiro-nome">
+    </div>
+    <div>
+    <label for="Sobrenome">Sobrenome</label>
+    <input id="sobrenome">
+    </div>
+
+     <div>
+        <label for="forma de tratamento"> Forma de tratamento</label>
+        <select name="" id="forma-tratamento">
+            <option value="">Selecionada</option>
+            <option value="">Vossa Majestade</option>
+            <option value="">Excelentíssimo</option>
+            <option value="">ilustríssimo</option>
+            <option value="">Vossa Senhoria</option>
+            <option value="">Senhor/ora</option>
+            <option value="">Cremosíssimo</option>
+            
+        </select>
+    </div>
+        <Fieldset>
+        <legend>Sexo</legend>
+        <input id=" masculino" type="radio" name="sexo"  checked>
+        <label for="masculino"> Masculino</label>
+        <br>
+        <input id=" feminino" type="radio" name="sexo" >
+        <label for="feminino"> Femenino</label>
+    </Fieldset>
+    <div>
+    <label for="hora-dia"> Hora do dia</label>
+    <input id="hora-dia" type="number" min="0" max="23">
+</div>
+
+<fieldset>
+    <legend>Opções de exibição</legend>
+    <input id="alert" type="checkbox" >
+    <label for="alert"> Exibir um alert()</label>
+    <br>
+    <input id="document" type="checkbox" >
+    <label for="document">Exibir no documento</label>
+</fieldset>
+
+<div id="saudacao">
+
+</div>
+
+<button id="enviar"> Enviar</button>
+
+
+ <script>
+        // 'use strict' impede que variáveis sejam declaradas
+        // sem o uso de let, var ou const
+        // Inicializar variáveis diretamente é má prática de
+        // programação
+        'use strict'
+
+   
+
+const ElPrimeiroNOme=document.getElementById('primeiro-nome')
+const ElSobreNOme=document.getElementById('sobrenome')
+const ElFormaTratamento=document.getElementById('forma-tratamento')
+const ElMasculino=document.getElementById('masculino')
+const ElFeminino=document.getElementById('feminino')
+const ElHoraDia=document.querySelector('#hora-dia')
+const ElAlert=document.querySelector('#alert')
+const Eldocument=document.querySelector('#document')
+const ElSaudacao=document.querySelector('#saudacao')
+const ElEnviar=document.querySelector('#enviar')
+
+function validar(){
+    // Retorna true caso todos os campos do formulario tiverem preenchidos
+
+    if ( ElPrimeiroNOme.value=== ''){
+        alert('Prencha o primeiro nome')
+        ElPrimeiroNOme.focus()
+        return false
+    }
+
+}
+
+
+
+
+
+        
+        
+
+    </script>
+    
+</body>
+</html>
